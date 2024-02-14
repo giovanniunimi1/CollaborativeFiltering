@@ -17,7 +17,11 @@ def read_json(file_name): ## helper method to read json files more efficiently
         break
     return df
 
-
+os.environ['KAGGLE_USERNAME'] = "xxxxxx"
+os.environ['KAGGLE_KEY'] = "xxxxxx"
+!kaggle datasets download -d 'yelp_academic_dataset_review.json'
+!kaggle datasets download -d 'yelp_academic_dataset_user.json'
+!kaggle datasets download -d 'yelp_academic_dataset_business.json'
 
 
 #ENVIRONMENT VARIABLE
